@@ -98,3 +98,97 @@ main{
     gap:10px;
     flex-direction: column;
 }
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive container */
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Responsive layout for nav, items, images */
+@media screen and (max-width: 768px) {
+
+    .navlist nav {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+    }
+
+    #logo {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #help ul {
+        flex-direction: column;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .contentbox {
+        width: 90%;
+        padding: 15px;
+        gap: 40px;
+    }
+
+    .item1,
+    .item2,
+    .item3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image1 img,
+    .image2 img,
+    .image3 img {
+        margin: 20px 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .dish1,
+    .dish2,
+    .dish3 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .footerbox {
+        text-align: center;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #logo {
+        font-size: 22px;
+    }
+
+    #help ul {
+        font-size: 16px;
+    }
+
+    .contentbox {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p,
+    li {
+        font-size: 15px;
+    }
+}
